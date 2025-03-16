@@ -26,28 +26,28 @@ const Navbar = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 backdrop-blur-md" />
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.2)_50%,transparent_75%,transparent_100%)] bg-[length:250px_250px] animate-[gradient_15s_linear_infinite]" />
         
-        <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-3">
+        <div className="relative max-w-7xl mx-auto px-2 md:px-10 py-1 md:py-3">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-6 text-sm font-medium">
-              <a href="mailto:amanbio@hotmail.com" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
-                <span className="bg-white/90 p-1.5 rounded-full">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <div className="flex items-center space-x-3 md:space-x-6 text-xs md:text-sm font-medium">
+              <a href="mailto:amanbio@hotmail.com" className="flex items-center space-x-1 md:space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
+                <span className="bg-white/90 p-1 md:p-1.5 rounded-full">
+                  <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </span>
                 <span className="hidden sm:inline">amanbio@hotmail.com</span>
               </a>
-              <a href="tel:+919814189230" className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
-                <span className="bg-white/90 p-1.5 rounded-full">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <a href="tel:+919814189230" className="flex items-center space-x-1 md:space-x-2 text-gray-600 hover:text-blue-600 transition-colors">
+                <span className="bg-white/90 p-1 md:p-1.5 rounded-full">
+                  <svg className="w-3 h-3 md:w-4 md:h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                 </span>
                 <span className="hidden sm:inline">+91 98141 89230</span>
               </a>
             </div>
-            <SocialIcons className="justify-end" />
+            <SocialIcons className="justify-end scale-75 md:scale-100" />
           </div>
         </div>
       </motion.div>
@@ -58,7 +58,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         className="w-full bg-white border-b border-gray-100 shadow-lg"
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
+        <div className="max-w-7xl mx-auto px-2 md:px-10 py-2 md:py-4">
           <div className="flex justify-between items-center">
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -67,10 +67,11 @@ const Navbar = () => {
             >
               <Link href="/" className="flex items-center">
                 <Image
-                  src="logo_abrl.png" // Make sure to add your logo file to the public/images folder
+                  src="/logo_abrl.png"
                   alt="HYPCHLOR Logo"
-                  width={150} // Adjust these values based on your logo size
-                  height={150}
+                  width={100}
+                  height={100}
+                  className="w-20 md:w-32"
                   priority
                 />
               </Link>
@@ -122,20 +123,12 @@ const Navbar = () => {
                 >
                   <Link 
                     href={item.path}
-                    className="block px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-blue-50"
+                    className="block px-4 py-2 text-gray-700 text-sm font-medium rounded-lg hover:bg-blue-50"
                   >
                     {item.name}
                   </Link>
                 </motion.div>
               ))}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full mt-4 relative px-6 py-2 font-semibold text-white rounded-lg overflow-hidden"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600" />
-                <span className="relative">Get Started</span>
-              </motion.button>
             </div>
           </motion.div>
         </div>

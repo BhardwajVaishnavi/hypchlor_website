@@ -44,19 +44,19 @@ export default function Contact() {
   ];
 
   return (
-    <main className="min-h-screen pt-60 pb-12 bg-gradient-to-b from-gray-50 to-white">
+    <main className="min-h-screen pt-32 sm:pt-60 pb-12 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
         >
-          <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-800 to-pink-600">
+          <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-800 to-pink-600">
             Get in Touch
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our products or services? We're here to help and would love to hear from you.
+          <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
+            Have questions about our products or services? We're here to help.
           </p>
         </motion.div>
 

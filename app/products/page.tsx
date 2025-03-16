@@ -32,24 +32,24 @@ export default function Products() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 pt-60">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-4 sm:py-8 pt-32 sm:pt-60">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4">
         {/* Header Section */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
         >
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r to-blue-600 from-blue-800 bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 bg-gradient-to-r to-blue-600 from-blue-800 bg-clip-text text-transparent">
             Our Products
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our range of high-quality sodium hypochlorite solutions for various applications
+          <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
+            Discover our range of high-quality sodium hypochlorite solutions
           </p>
         </motion.div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
           {products.map((product, index) => (
             <motion.div
               key={product.id}
@@ -59,10 +59,10 @@ export default function Products() {
               className="group"
             >
               <Link href={`/products/${product.id}`}>
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl 
+                <div className="bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl 
                               transition-all duration-300 transform hover:-translate-y-2">
                   {/* Image Container */}
-                  <div className="relative h-64 bg-gradient-to-br from-blue-50 to-purple-50 p-6">
+                  <div className="relative h-48 sm:h-64 bg-gradient-to-br from-blue-50 to-purple-50 p-4 sm:p-6">
                     <div className="relative h-full w-full">
                       <Image
                         src={product.image}

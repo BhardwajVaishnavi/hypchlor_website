@@ -18,19 +18,19 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section className="py-8 sm:py-20">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.2 }}
-              className="bg-white p-6 rounded-xl shadow-lg"
+              className="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl shadow-lg"
             >
-              <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">{feature.title}</h3>
+              <p className="text-sm sm:text-base text-gray-600">{feature.description}</p>
             </motion.div>
           ))}
         </div>
