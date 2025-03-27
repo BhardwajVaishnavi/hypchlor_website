@@ -50,7 +50,7 @@ export const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="relative h-[500px] sm:h-[600px] overflow-hidden rounded-3xl bg-gradient-to-r from-blue-50 via-white to-blue-50 mt-4 sm:mt-32">
+    <div className="relative h-[500px] sm:h-[600px] overflow-hidden rounded-3xl bg-gradient-to-r from-blue-50 via-white to-blue-50">
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}

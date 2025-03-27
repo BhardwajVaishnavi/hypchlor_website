@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,41 +25,43 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: "📍",
+      icon: <FaMapMarkerAlt />,
       title: "Visit Us",
       details: ["Plot No. 619, Sector 82,", "JLPL Industrial Area", "Mohali, Punjab - India"],
-      color: "from-emerald-400 to-teal-500"
     },
     {
-      icon: "📧",
+      icon: <FaEnvelope />,
       title: "Email Us",
       details: ["amanbio@hotmail.com", "support@hypchlor.com"],
-      color: "from-blue-400 to-indigo-500"
     },
     {
-      icon: "📞",
+      icon: <FaPhoneAlt />,
       title: "Call Us",
       details: ["+91 98141 89230", "+91 98141 65536"],
-      color: "from-purple-400 to-pink-500"
     }
   ];
 
   return (
-    <main className="min-h-screen pt-32 sm:pt-60 pb-12 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-8 sm:mb-16"
-        >
-          <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-black via-blue-800 to-pink-600">
-            Get in Touch
-          </h1>
-          <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Have questions about our products or services? We're here to help.
-          </p>
-        </motion.div>
+    <main>
+       <div
+        className="relative contactus-banner p-12 bg-cover bg-center bg-no-repeat pt-[134px]"
+        style={{ backgroundImage: "url(../images/contactus-banner.jpg)" }}
+      >
+        {/* Overlay Layer */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* Content */}
+        <div className="relative content text-white text-center flex flex-col items-center">
+        <h1 className="text-5xl font-medium text-white mb-4 text-center">
+        Get in Touch
+        </h1>
+        <p className="text-lg font-normal text-white text-center">
+        Have questions about our products or services? We're here to help.
+        </p>
+        </div>
+      </div>
+      <div className="max-w-7xl mx-auto p-12">
+        
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {contactInfo.map((info, index) => (
@@ -70,18 +73,24 @@ export default function Contact() {
               className="group relative"
             >
               <div
-                className={`absolute inset-0 bg-gradient-to-r ${info.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl blur-xl`}
+                className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl blur-xl`}
               />
-              <div className="relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${info.color} flex items-center justify-center text-white text-3xl mb-6 transform group-hover:scale-110 transition-transform duration-300`}>
+              <div className="contact-boxes relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 h-[200px]">
+                <div className='flex flex-row gap-7'>
+                <div className='icons text-[30px]'>
                   {info.icon}
                 </div>
+                <div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-800">{info.title}</h3>
                 {info.details.map((detail, idx) => (
                   <p key={idx} className="text-gray-600 mb-2 hover:text-gray-800 transition-colors duration-300">
                     {detail}
                   </p>
-                ))}
+                  ))}
+                </div>
+                  
+                </div>
+                
               </div>
             </motion.div>
           ))}
@@ -178,10 +187,10 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-semibold 
-                         hover:shadow-lg transition-all duration-300 relative overflow-hidden group"
+                className="w-full bg-[#011938] text-white px-8 py-4 rounded-xl font-semibold border 
+                         hover:shadow-lg transition-all duration-300 relative overflow-hidden group hover:bg-[#fff] hover:border hover:border-[#011938] hover:text-black"
               >
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></span>
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></span>
                 <span className="relative">Send Message</span>
               </motion.button>
             </form>

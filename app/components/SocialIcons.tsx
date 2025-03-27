@@ -54,7 +54,7 @@ const SocialIcons = ({ className = '' }) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="w-8 h-8 bg-white/90 rounded-full flex items-center justify-center text-gray-800 hover:bg-white hover:text-blue-600 transition-colors"
+          className="w-8 h-8 flex items-center justify-center text-[#a0bbdd] hover:text-[#2e8dcb] transition-colors"
         >
           {social.icon}
         </motion.a>

@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed w-full z-50">
+    <header className="fixed top-0 left-0 w-full z-50">
       {/* Top Bar with Social Icons - Lighter color scheme */}
       <motion.div 
         initial={{ y: -50 }}
