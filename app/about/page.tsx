@@ -52,7 +52,7 @@ export default function About() {
 
     {/* Bottom-Left Box (Experience) */}
     <motion.div
-      className="absolute bottom-4 left-4 bg-white p-4 shadow-md rounded-xl flex items-center"
+      className="experince-box absolute bottom-4 left-4 bg-white p-4 shadow-md flex items-center"
       animate={{ y: [0, -15, 0] }}  // Smooth jump
       transition={{
         duration: 1.8,         // Slightly slower duration
@@ -70,13 +70,13 @@ export default function About() {
 
     {/* Top-Right Box (Location) */}
     <motion.div
-      className="absolute top-8 right-4 bg-white p-4 shadow-md rounded-xl flex items-center"
-      animate={{ y: [0, -15, 0] }}  // Smooth jump
+      className="location-box absolute top-8 right-4 bg-white p-4 shadow-md flex items-center"
+      animate={{ y: [0, -15, 0] }}  
       transition={{
-        duration: 1.8,         // Slightly slower duration
-        repeat: Infinity,      // Infinite loop
-        repeatType: "mirror",  // Smooth yoyo-like effect
-        ease: "easeInOut"      // Smooth motion
+        duration: 1.8,        
+        repeat: Infinity,      
+        repeatType: "mirror",  
+        ease: "easeInOut"      
       }}
     >
       <div>
@@ -91,7 +91,7 @@ export default function About() {
 
       {/* Right Side (Content Section) */}
       <div className="content p-12 flex flex-col justify-center" data-aos="zoom-in-left">
-        <h1 className="text-4xl font-bold mb-6">Company Overview</h1>
+        <h1 className="text-4xl text-[#011938] font-bold mb-6">Company Overview</h1>
         <p className="text-lg leading-relaxed">
           Since our establishment, <span className="font-bold">HYPCHLOR®</span> has been at the forefront of chemical manufacturing excellence. Our state-of-the-art facility in Mohali, Punjab, combines cutting-edge technology with stringent quality control measures to produce superior sodium hypochlorite solutions.
         </p>
@@ -106,7 +106,7 @@ export default function About() {
           <div 
             className="mb-12 sm:mb-20 px-4 sm:px-0"
           >
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center text-gray-800">Our Certifications</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center text-[#011938]">Our Certifications</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
               {[
                 {

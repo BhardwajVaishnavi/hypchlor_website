@@ -81,7 +81,7 @@ export default function Contact() {
                   {info.icon}
                 </div>
                 <div>
-                <h3 className="text-2xl font-semibold mb-4 text-gray-800">{info.title}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">{info.title}</h3>
                 {info.details.map((detail, idx) => (
                   <p key={idx} className="text-gray-600 mb-2 hover:text-gray-800 transition-colors duration-300">
                     {detail}

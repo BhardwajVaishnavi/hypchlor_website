@@ -40,7 +40,7 @@ export default function Products() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8 sm:mb-16"
         >
-          <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 bg-gradient-to-r to-blue-600 from-blue-800 bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-5xl font-bold mb-2 sm:mb-4 text-[#011938]">
             Our Products
           </h1>
           <p className="text-sm sm:text-xl text-gray-600 max-w-2xl mx-auto">

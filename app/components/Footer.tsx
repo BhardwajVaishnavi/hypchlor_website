@@ -31,16 +31,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="second-row">
-        <h3 className="text-sm md:text-base font-medium text-white mb-2">Quick Links</h3>
-            <div className="space-y-0.5 text-xs md:text-sm text-[#a0bbdd]">
+        <h3 className="text-lg font-medium text-white mb-2">Quick Links</h3>
+            <div className="space-y-0.5 text-[15px] text-[#a0bbdd]">
               <a href="/products" className="block hover:text-[#2e8dcb] transition-colors mb-1">Products</a>
               <a href="/about" className="block hover:text-[#2e8dcb] transition-colors mb-1">About Us</a>
               <a href="/contact" className="block hover:text-[#2e8dcb] transition-colors mb-1">Contact</a>
               </div>
         </div>
         <div className="third-row">
-        <h3 className="text-sm md:text-base font-medium text-white mb-2">Contact Us</h3>
-            <div className="space-y-0.5 text-xs md:text-sm text-[#a0bbdd]">
+        <h3 className="text-lg font-medium text-white mb-2">Contact Us</h3>
+            <div className="space-y-0.5 text-[15px] text-[#a0bbdd]">
               <a href="tel:+919814189230" className="block hover:text-[#2e8dcb] transition-colors mb-1">
                 +91 98141 89230
               </a>
@@ -53,8 +53,8 @@ const Footer = () => {
             </div>
         </div>
         <div className="fourth-row">
-        <h3 className="text-sm md:text-base font-medium text-white mb-2">Visit Us</h3>
-            <address className="not-italic text-[#a0bbdd] text-xs md:text-sm space-y-0.5">
+        <h3 className="text-lg font-medium text-white mb-2">Visit Us</h3>
+            <address className="not-italic text-[#a0bbdd] text-[15%] md:text-sm space-y-0.5">
               <p>Plot No. 619, Sector 82,</p>
               <p>JLPL Industrial Area</p>
               <p>Mohali, Punjab - India</p>
