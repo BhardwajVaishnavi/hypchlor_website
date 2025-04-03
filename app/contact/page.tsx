@@ -71,6 +71,7 @@ export default function Contact() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative"
+              data-aos="fade-up"
             >
               <div
                 className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-2xl blur-xl`}

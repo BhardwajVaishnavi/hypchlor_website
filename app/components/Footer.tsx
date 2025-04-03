@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 items-center lg:justify-items-center">
         <div className="first-row">
           <div className='mb-5'>
-            <img src="/images/bg-logo.png" alt="logo" className='w-[40%]'/>
+            <a href="/"><img src="/images/bg-logo.png" alt="logo" className='w-[40%]'/></a>
             <h2 className="text-[17px] font-medium text-white mb-1">
             Aman Biotech & Research Laboratories
           </h2>
@@ -71,7 +71,7 @@ const Footer = () => {
                 href="https://wipstertechnologies.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-black font-semibold hover:text-[#eb1d25] transition-colors"
+                className="text-black font-semibold hover:text-[#eb1e22] transition-colors"
               >
                 Wipster Technologies Private Limited
               </a>
