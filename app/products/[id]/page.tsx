@@ -82,13 +82,13 @@ const getProductDetails = (id: string) => {
       image: "/products/1.png"
     },
     "hypchlor-grade3": {
-      name: "HYPCHLOR® 10% ± 1%",
+      name: "HYPCHLOR® 9% - 11%",
       fullName: "Sodium Hypochlorite Solution (IS 11673 Part 3)",
       manufacturer: "Aman Biotech (India) & Research Laboratories",
       location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
       certification: "IS 11673 Part 3 Certified",
       specifications: {
-        concentration: "10% ± 1% available chlorine",
+        concentration: "9% - 11% available chlorine",
         standard: "IS 11673 Part 3",
         appearance: "Clear yellow-green liquid",
         odor: "Strong chlorine-like",

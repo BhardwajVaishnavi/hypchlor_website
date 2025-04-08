@@ -27,7 +27,7 @@ export const Carousel: React.FC = () => {
       features: ["ISI Marked", "Consistent Quality", "Reliable Performance"]
     },
     {
-      name: "HYPCHLOR® 10% ± 1% (IS 11673 Part 3)",
+      name: "HYPCHLOR® 9% - 11% (IS 11673 Part 3)",
       image: "/products/3.png",
       description: "Precise concentration for specialized applications",
       features: ["Accurate Concentration", "Stable Formula", "Versatile Use"]
@@ -50,7 +50,7 @@ export const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="relative h-[500px] sm:h-[600px] overflow-hidden rounded-3xl bg-gradient-to-r from-blue-50 via-white to-blue-50">
+    <div className="relative h-[300px] sm:h-[450px] overflow-hidden rounded-3xl bg-gradient-to-r from-blue-50 via-white to-blue-50">
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide}
@@ -62,7 +62,7 @@ export const Carousel: React.FC = () => {
         onClick={nextSlide}
         className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white p-1.5 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
       >
-        →
+        →  
       </button>
 
       <AnimatePresence mode="wait">
@@ -72,9 +72,9 @@ export const Carousel: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="absolute inset-0 flex items-center"
+          className="absolute inset-0 flex items-center justify-center"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 p-3 sm:p-12">
+          <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 sm:gap-8 p-3 sm:p-12 items-center justify-center">
             {/* Content Section */}
             <motion.div 
               className="flex flex-col justify-center space-y-2 sm:space-y-6"
@@ -83,7 +83,7 @@ export const Carousel: React.FC = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="space-y-1 sm:space-y-4">
-                <h3 className="text-base sm:text-4xl font-bold text-gray-800 leading-tight">
+                <h3 className="text-base sm:text-2xl font-bold text-gray-800 leading-tight">
                   {products[currentIndex].name}
                 </h3>
                 <p className="text-xs sm:text-lg text-gray-600">
@@ -122,7 +122,7 @@ export const Carousel: React.FC = () => {
 
             {/* Image Section - Increased size */}
             <div className="relative flex items-center justify-center h-[250px] sm:h-[500px]">
-              <div className="relative w-[250px] h-[250px] sm:w-[500px] sm:h-[500px]">
+              <div className="relative w-[250px] h-[150px] sm:w-[400px] sm:h-[400px]">
                 {/* Decorative backgrounds */}
                 <div className="absolute inset-0 bg-blue-100/50 rounded-3xl transform -rotate-6" />
                 <div className="absolute inset-0 bg-blue-50/50 rounded-3xl transform rotate-3" />
@@ -134,13 +134,13 @@ export const Carousel: React.FC = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: 0.2 }}
                 >
-                  <div className="absolute inset-0 flex items-center justify-center p-2 sm:p-8">
+                  <div className="absolute inset-0 flex items-center justify-left p-2 sm:p-8">
                     <div className="relative w-full h-full">
                       <Image
                         src={products[currentIndex].image}
                         alt={products[currentIndex].name}
                         fill
-                        sizes="(max-width: 640px) 250px, 500px"
+                        sizes="(max-width: 640px) 100px, 100px"
                         className="object-contain product-image-float"
                         priority
                       />

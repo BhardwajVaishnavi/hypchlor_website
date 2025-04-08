@@ -23,8 +23,8 @@ export default function Products() {
     },
     {
       id: "hypchlor-grade3",
-      name: "HYPCHLOR® 10% ± 1%",
-      concentration: "3-5%",
+      name: "HYPCHLOR® 9% - 11%",
+      concentration: "9-11%",
       description: "Suitable for household cleaning and disinfection",
       applications: ["Home Cleaning", "Laundry", "General Sanitization"],
       image: "/products/3.png"
