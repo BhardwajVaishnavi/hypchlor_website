@@ -21,25 +21,31 @@ export const Carousel: React.FC = () => {
       features: ["ISI Marked", "Premium Quality", "Industrial Grade"]
     },
     {
-      name: "HYPCHLOR® (Grade-1) 1% (IS 11673 Part 2)",
+      name: "HYPCHLOR® (Grade-1) 1% ",
       image: "/products/2.png",
       description: "BIS certified solution conforming to IS 11673(Part2):2019",
       features: ["ISI Marked", "Consistent Quality", "Reliable Performance"]
     },
     {
-      name: "HYPCHLOR® 9% - 11% (IS 11673 Part 3)",
+      name: "HYPCHLOR® 9%-11% ",
       image: "/products/3.png",
+      description: "BIS certified solution conforming to IS 11673(Part1):2019",
+      features: ["ISI Marked", "Consistent Quality", "Reliable Performance"]
+    },
+    {
+      name: "HYPCHLOR® (Grade-1) 12.5% - 15.0% (IS 11673 Part 2)",
+      image: "",
       description: "Precise concentration for specialized applications",
       features: ["Accurate Concentration", "Stable Formula", "Versatile Use"]
     }
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % products.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentIndex((prev) => (prev + 1) % products.length);
+  //   }, 5000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % products.length);

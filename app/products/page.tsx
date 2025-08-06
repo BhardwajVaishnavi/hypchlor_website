@@ -7,28 +7,36 @@ export default function Products() {
   const products = [
     {
       id: "hypchlor-grade1",
-      name: "HYPCHLOR® 4%-6%",
-      concentration: "4%-6%",
+      name: "HYPCHLOR® 4.0%-6.0%",
+      concentration: "4.0%-6.0%",
       description: "High-concentration sodium hypochlorite for industrial applications",
       applications: ["Water Treatment", "Textile Industry", "Paper & Pulp"],
       image: "/products/1.png"
     },
     {
       id: "hypchlor-grade2",
-      name: "HYPCHLOR® 1%",
-      concentration: "1%",
+      name: "HYPCHLOR® 1.0%",
+      concentration: "1.0%",
       description: "Medium-concentration solution for commercial use",
       applications: ["Swimming Pools", "Commercial Cleaning", "Sanitization"],
       image: "/products/2.png"
     },
     {
       id: "hypchlor-grade3",
-      name: "HYPCHLOR® 9% - 11%",
-      concentration: "9-11%",
+      name: "HYPCHLOR® 9.0%-11.0%",
+      concentration: "9.0%-11.0%",
       description: "Suitable for household cleaning and disinfection",
       applications: ["Home Cleaning", "Laundry", "General Sanitization"],
       image: "/products/3.png"
-    }
+    },
+    {
+      id: "hypchlor1",
+      name: "HYPCHLOR® 12.5%-15.0%",
+      concentration: "12.5%-15.0%",
+      description: "Medium-concentration solution for commercial use",
+      applications: ["Swimming Pools", "Commercial Cleaning", "Sanitization"],
+      image: ""
+    },
   ];
 
   return (
