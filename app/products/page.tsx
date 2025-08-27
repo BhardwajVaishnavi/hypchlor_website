@@ -7,33 +7,33 @@ export default function Products() {
   const products = [
     {
       id: "hypchlor-grade1",
-      name: "HYPCHLOR® 4.0%-6.0%",
+      name: "HYPCHLOR® Sodium Hypochlorite Grade-1 (4.0-6.0%)",
       concentration: "4.0%-6.0%",
-      description: "High-concentration sodium hypochlorite for industrial applications",
+      description: "Sodium Hypchlorite for General Disinfection.",
       applications: ["Water Treatment", "Textile Industry", "Paper & Pulp"],
       image: "/products/1.png"
     },
     {
       id: "hypchlor-grade2",
-      name: "HYPCHLOR® 1.0%",
+      name: "HYPCHLOR® Sodium Hypochlorite 1.0%",
       concentration: "1.0%",
-      description: "Medium-concentration solution for commercial use",
+      description: "Sodium Hypochlorite Solution Ready To Use.",
       applications: ["Swimming Pools", "Commercial Cleaning", "Sanitization"],
       image: "/products/2.png"
     },
     {
       id: "hypchlor-grade3",
-      name: "HYPCHLOR® 9.0%-11.0%",
-      concentration: "9.0%-11.0%",
-      description: "Suitable for household cleaning and disinfection",
+      name: "HYPCHLOR® Sodium Hypochlorite 10±1%",
+      concentration: "10±1%",
+      description: "Sodium Hypochlorite Solution For Industrial Use.",
       applications: ["Home Cleaning", "Laundry", "General Sanitization"],
       image: "/products/3.png"
     },
     {
       id: "hypchlor1",
-      name: "HYPCHLOR® 12.5%-15.0%",
-      concentration: "12.5%-15.0%",
-      description: "Medium-concentration solution for commercial use",
+      name: "HYPCHLOR® Sodium Hypochlorite Solution Grade-2 (12.5-15.0%)",
+      concentration: "12.5-15.0%",
+      description: "Sodium Hypochlorite Solution For Industrial & Institutional Applications.",
       applications: ["Swimming Pools", "Commercial Cleaning", "Sanitization"],
       image: ""
     },

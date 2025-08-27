@@ -8,44 +8,7 @@ import Link from 'next/link';
 const getProductDetails = (id: string) => {
   const products = {
     "hypchlor-grade1": {
-      name: "HYPCHLOR® (Grade-1) 1%",
-      fullName: "",
-      manufacturer: "Aman Biotech (India) & Research Laboratories",
-      location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
-      certification: "IS 11673 Part 2 Certified",
-      specifications: {
-        concentration: "1% available chlorine",
-        standard: "",
-        appearance: "Clear, pale yellow-green liquid",
-        odor: "Mild chlorine-like",
-        density: "1.07 - 1.18 at 25°C",
-        pH: "11.0 - 11.5",
-        stability: "Stable under recommended storage conditions",
-        solubility: "Complete in water",
-      },
-      applications: [
-        "Drinking water treatment",
-        "Swimming pool sanitization",
-        "Food industry sanitization",
-        "Healthcare facilities",
-        "General disinfection",
-        "Water purification"
-      ],
-      usage: {
-        dilution: "Ready to use for most applications",
-        safety: [
-          "Store in cool, dark place",
-          "Keep away from direct sunlight",
-          "Wear protective gloves when handling",
-          "Avoid contact with eyes",
-          "Do not mix with other chemicals",
-          "Use in well-ventilated areas"
-        ]
-      },
-      image: "/products/2.png"
-    },
-    "hypchlor-grade2": {
-      name: "HYPCHLOR® (Grade-1) 4.0%-6.0%",
+      name: "HYPCHLOR® Sodium Hypochlorite Solution Grade-1 (4.0-6.0%)",
       fullName: "Sodium Hypochlorite Solution (IS 11673 Part 1)",
       manufacturer: "Aman Biotech (India) & Research Laboratories",
       location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
@@ -81,14 +44,51 @@ const getProductDetails = (id: string) => {
       },
       image: "/products/1.png"
     },
+    "hypchlor-grade2": {
+      name: "HYPCHLOR® Sodium Hypochlorite 1%",
+      fullName: "",
+      manufacturer: "Aman Biotech (India) & Research Laboratories",
+      location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
+      certification: "IS 11673 Part 2 Certified",
+      specifications: {
+        concentration: "1% available chlorine",
+        standard: "",
+        appearance: "Clear, pale yellow-green liquid",
+        odor: "Mild chlorine-like",
+        density: "1.07 - 1.18 at 25°C",
+        pH: "11.0 - 11.5",
+        stability: "Stable under recommended storage conditions",
+        solubility: "Complete in water",
+      },
+      applications: [
+        "Drinking water treatment",
+        "Swimming pool sanitization",
+        "Food industry sanitization",
+        "Healthcare facilities",
+        "General disinfection",
+        "Water purification"
+      ],
+      usage: {
+        dilution: "Ready to use for most applications",
+        safety: [
+          "Store in cool, dark place",
+          "Keep away from direct sunlight",
+          "Wear protective gloves when handling",
+          "Avoid contact with eyes",
+          "Do not mix with other chemicals",
+          "Use in well-ventilated areas"
+        ]
+      },
+      image: "/products/2.png"
+    },
     "hypchlor-grade3": {
-      name: "HYPCHLOR® 9% - 11%",
+      name: "HYPCHLOR® Sodium Hypochlorite Solution 10±1%",
       fullName: "Sodium Hypochlorite Solution (IS 11673 Part 1)",
       manufacturer: "Aman Biotech (India) & Research Laboratories",
       location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
       certification: "IS 11673 Part 1 Certified",
       specifications: {
-        concentration: "9% - 11% available chlorine",
+        concentration: "10±1% available chlorine",
         standard: "IS 11673 Part 1",
         appearance: "Clear yellow-green liquid",
         odor: "Strong chlorine-like",
@@ -119,13 +119,13 @@ const getProductDetails = (id: string) => {
       image: "/products/3.png"
     },
     "hypchlor1": {
-      name: "HYPCHLOR® 12.5% - 15.0%",
+      name: "HYPCHLOR® Sodium Hypochlorite Solution Grade-2 (12.5-15.0%)",
       fullName: "Sodium Hypochlorite Solution (IS 11673 Part 2)",
       manufacturer: "Aman Biotech (India) & Research Laboratories",
       location: "Plot No. 619, Sector 82, JLPL, Industrial Area, Mohali (Punjab)",
       certification: "IS 11673 Part 1 Certified",
       specifications: {
-        concentration: "12.5% - 15.0% available chlorine",
+        concentration: "12.5-15.0% available chlorine",
         standard: "IS 11673 Part 2",
         appearance: "Clear yellow-green liquid",
         odor: "Strong chlorine-like",
